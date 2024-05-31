@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <title>Aplikasi Parkiran</title>
+    <meta content="Admin Dashboard" name="description" />
+    <meta content="Mannatthemes" name="author" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .accountbg {
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .wrapper-page {
+            width: 100%;
+            max-width: 400px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Begin page -->
+    <div class="accountbg" style="background-image: url('{{ url_for('static', filename='assets/images/sawa.jpg') }}');">
+        <div class="wrapper-page">
+            <div class="card">
+                <div class="card-body">
+
+                    <div class="text-center mb-4">
+                        <h1>Deteksi Penyakit Padi</h1>
+                    </div>
+
+                    <div class="p-3">
+                        <form method="POST" action="/login">
+                            <div class="form-group">
+                                <label for="username">Username:</label>
+                                <input type="text" id="username" name="username" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password:</label>
+                                <input type="password" id="password" name="password" class="form-control">
+                            </div>
+                            <div class="form-group text-center">
+                                <button class="btn btn-danger btn-block waves-effect waves-light" type="submit">Log In</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
